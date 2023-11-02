@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int a[5];
+	a[0] = 10;
+	a[1] = 30;
+	a[2] = 50;
+	a[3] = 70;
+	a[4] = 90;
+	 
+	printf(" Element of an array: ");
+	int i;
+	for(i=0;i<5;i++)
+	{
+		printf(" %d ", a[i]);
+	}
+	return 0;
+}

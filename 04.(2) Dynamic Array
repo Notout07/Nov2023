@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int a[5],i;
+	
+	printf(" Enter 5 Element : ");
+	for(i=0; i<5; i++)
+	scanf(" \n %d ", &a[i]);
+	
+	printf(" \nThe new array is.......\n ");
+	for(i=0; i<5; i++)
+	printf(" \n %d ",a[i]);
+}

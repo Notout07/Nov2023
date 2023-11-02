@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void display();
+void add();
+int main()
+{
+  int n;
+  printf(" Enter your choice : ");
+  scanf("%d", &n);
+  switch(n)
+{
+  case 1:
+           display();
+           break;
+  case 2:
+           add();
+           break;
+  default : printf(" Invalid choice ");
+           break;
+}
+  return 0;
+}
+
+void display()
+{
+  printf(" Hello "); 
+}
+void add()
+{
+  int n1 = 1, n2 = 3, sum;
+  sum = n1 + n2;
+  printf(" Sum is = %d ", sum);
+}

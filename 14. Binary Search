@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int x[10];
+	int i,beg,end,mid,value;
+	printf("Enter array elements in sorted order:\n");
+	for(i=0;i<10;i++)
+	{
+		printf("Enter the value:");
+		scanf("%d",&x[i]);
+	}
+	printf("Enter Search Element:");
+	scanf("%d",&value);
+	beg=0;
+	end=9;
+	for(mid=(beg+end)/2;beg<=end;mid=(beg+end)/2)
+	{
+		if(x[mid]==value)
+		{
+			printf("\nValue found on %d position",mid+1);
+			break;
+		}
+		else if(x[mid]<value)
+		{
+			beg=mid+1;
+		}
+		else
+		{
+			end=mid-1;
+		}
+	}
+	if(beg>end)
+	{
+		printf("\nValue Does not Exits:");
+	}
+}

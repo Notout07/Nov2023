@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int x[10];
+	int i,search;
+	for(i=0;i<10;i++)
+	{
+		printf("Enter the value:");
+		scanf("%d",&x[i]);
+	}
+	printf("Enter Search Element:");
+	scanf("%d",&search);
+	for(i=0;i<10;i++)
+	{
+		if(x[i]==search)
+		{
+			printf("\nValue found on %d position",i+1);
+			break;
+		}
+	}
+	if(i==10)
+	{
+		printf("\nValue Does not Exist:");
+	}
+}
